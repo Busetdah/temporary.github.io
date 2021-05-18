@@ -15,8 +15,15 @@ html, body{
 	padding-bottom: 3%;
 }
 .hero-inner img{
+	margin: 0;
     height: 60vh;
     width: 60vh;
+}
+@media only screen and (max-width: 992px){
+	.hero-inner img{
+		height: 35vh;
+		width: 35vh;
+	}
 }
 @media only screen and (max-width: 450px){
 	.hero-inner img{

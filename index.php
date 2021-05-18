@@ -31,9 +31,6 @@
 	<div class="hero">
 		<div class="hero-inner" align="center">
 			<img src="svg/brand.svg">
-			<form action="#">
-				<button class="download">Downloads</button>
-			</form>
 		</div>
 	</div>
 <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
