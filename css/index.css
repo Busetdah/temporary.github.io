@@ -20,8 +20,8 @@ html, body{
 }
 @media only screen and (max-width: 450px){
 	.hero-inner img{
-		height: 35vh;
-		width: 35vh;
+		height: 20vh;
+		width: 20vh;
 	}
 }
 button{
