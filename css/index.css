@@ -2,107 +2,73 @@
 	font-family: 'Open Sans', sans-serif;
 }
 html, body{
-	background: #7da5d6 !important;
-	height: 100%; 
+	background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,1) 100%);
 }
-.containerq{
-	min-height: 97%;
-	border-radius: 5px;
-	margin: 10px;
-	padding: 2%;
-	background: rgba(255,255,255,0.6);
-	box-shadow: 0 10px 14px rgba(0,0,0,0.4);
+.hero{
+	min-width: 100%;
+	background: url(https://i.pinimg.com/originals/40/3f/25/403f25684c9355fac0c6cb75bfcb1ca4.jpg) no-repeat center center;
+	background-size: cover;
+	background-color: rgba(66, 135, 245,0.4);
+	background-blend-mode: screen;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 3%;
 }
-.containerq h3{
-	font-weight: 700;
-	padding-bottom: 2.5%;	
+.hero-inner img{
+    height: 60vh;
+    width: 60vh;
 }
-.containerq img{
-	display: block;
-	margin: auto;
-    width: 50%;
-    height: auto;
-    padding-bottom: 15vh;
-}
-.tombol{
-	display: flex;
-	justify-content: center;
- 	align-items: center;
-}
-form{
-	display: inline-block;
-	margin: 2px;
-}
-@media screen and (max-width: 900px){
-	.containerq{
-		min-height: 0;
-	}
-	.containerq img{
-		width: 60%;
-		padding-bottom: 7.5vh;
-	}
-	.more{
-		display: none;
-	}
-}
-@media screen and (max-width: 700px){
-	.containerq h3{
-		padding-bottom: 5%;
+@media only screen and (max-width: 450px){
+	.hero-inner img{
+		height: 35vh;
+		width: 35vh;
 	}
 }
 button{
-	border-radius: 3px !important;
-	outline: none;
 	border: none;
-	padding: 5px 17px;
-	font-weight: 600;
-}
-.team{
-	background-color: #ffe018;
-	color: #fff;
-	transition: all 0.2s linear !important;
-}
-.team:hover{
-	background-color: rgba(255,255,255,0.4);
-	color: #ffe018;
+	outline: none;
+	padding: 6px 20px;
 }
 .download{
-	background-color: #7da5d6;
-	color: #fff;
-	transition: all 0.2s linear !important;
-}
-.download:hover{
-	background-color: rgba(255,255,255,0.4);
-	color: #7da5d6;
-}
-.more{
-	background-color: #4a4a4a;
-	color: #fff;
-	transition: all 0.2s linear !important;
-}
-.more:hover{
-	background-color: rgba(255,255,255,0.4);
-	color: #4a4a4a;
-}
-.container-team{
-	border-radius: 5px;
-	margin: 10px;
-	padding: 2%;
-	background: #fff;
-}
-.card-img-top {
-	position: absolute;
-	top: -90px;
-	left: 50%;
-	margin-left: -40px;
-	width: 90px !important;
-	height: auto;
-}
-.card {
 	font-weight: 700;
-	margin-top: 90px;
-	padding-top: 40px;
-	padding-bottom: 25px;
-	width: 15rem;
-	word-wrap: break-word;
+	border-radius: 20px;
+	background-color: #fff;
+}
+.navbar{
+	font-size: 18px;
+	background: rgba(20,20,20,0.3);
+	z-index: 99;
+	backdrop-filter: blur(5px);
+}
+.navbar-brand{
+	font-weight: 700;
+}
+.nav-link{
+	font-weight: 600;
+	color: #fff !important;
+}
+.float{
+	background: #75004c;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	position: fixed;
+	padding: 1vh;
+	bottom: 0%;
+	right: 2.5%;
+}
+.float a{
+	margin: 10px;
+}
+.githab{
+	font-weight: 600;
+	border-radius: 25px;
+	background: #fff;
+	color: #000;
+}
+.container-2{
+	background: #1497de;
+}
+.footer{
+	text-align: center;
+	color: #fff;
 }
