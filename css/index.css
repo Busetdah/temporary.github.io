@@ -4,6 +4,28 @@
 html, body{
 	background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,1) 100%);
 }
+.preloader{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	position: fixed;
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	background: #141414;
+	text-align: center;
+}
+.preloader img{
+	width: 120px;
+	height: auto;
+	animation: tick 1.3s infinite;
+}
+@keyframes tick{
+	50%{
+		width: 140px;
+		height: auto;
+	}
+}
 .hero{
 	min-width: 100%;
 	background: url(https://i.pinimg.com/originals/40/3f/25/403f25684c9355fac0c6cb75bfcb1ca4.jpg) no-repeat center center;
@@ -15,20 +37,21 @@ html, body{
 	padding-bottom: 3%;
 }
 .hero-inner img{
-	margin: 0;
-    height: 60vh;
-    width: 60vh;
+	margin: 10px;
+	padding: 0;
+    height: 50vh;
+    width: auto;
 }
 @media only screen and (max-width: 992px){
 	.hero-inner img{
-		height: 35vh;
-		width: 35vh;
+		height: 25vh;
+		width: auto;
 	}
 }
 @media only screen and (max-width: 450px){
 	.hero-inner img{
-		height: 20vh;
-		width: 20vh;
+		height: 10vh;
+		width: auto;
 	}
 }
 button{
@@ -55,7 +78,7 @@ button{
 	color: #fff !important;
 }
 .float{
-	background: #75004c;
+	background: #c90484;
 	border-top-right-radius: 3px;
 	border-top-left-radius: 3px;
 	position: fixed;
