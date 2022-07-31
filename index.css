@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:ital,wght@0,500;1,600&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.bi::before{
+    line-height: 2em !important;
+}
+
+a{
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.active{
+    font-size: 18pt;
+}
+
+.active-bar{
+    border-left: 3px solid #fff;
+}
+
+.logo{
+    padding: 1%;
+    width: fit-content;
+    float: left;
+}
+
+.mylogo{
+    position: absolute;
+    top: auto;
+    margin-left: -0.7%;
+    font-family: 'open sans', sans-serif;
+    font-size: 32pt;
+}
+
+object{
+    width: 4em;
+}
+
+.button{
+    position: absolute;
+    right: 0%;
+    padding: 1.4%;
+}
+
+.bi-github{
+    font-size: 24pt;
+}
+
+.bi-telegram{
+    font-size: 24pt;
+}
+
+input{
+    background: none;
+    border: none;
+    border-radius: 20px;
+}
+
+::placeholder{
+    color: #fff;
+    padding-left: 0.2rem;
+}
+
+.navbar-custom{
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.navbar-inner{
+    border-radius: 17px;
+    background: rgba(0, 0, 0, 0.4);
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: max-width 0.7s; 
+    overflow: hidden;
+    max-width: 0;
+    white-space: nowrap; 
+}
+
+.cust-anim{
+    max-width: 300px;
+}
+
+.navbar-inner i{
+    font-size: 14pt;
+    font-weight: 500;
+    font-style: normal;
+    padding-left: 2rem;
+}
+
+.navbar-inner p{
+    margin-top: 0.5rem !important;
+    margin-right: 3cm;
+    display: block;
+}
+
+.navbar-inner span{
+    display: none;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+}
+
+.hero-inner{
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    position:absolute;
+    padding: 0.3em;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+span.title{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 64pt;
+    line-height: 1em;
+}
+
+span.desc{
+    font-weight: 500;
+    font-size: 21pt;
+    text-align: left;
+    line-height: 1em;
+}
+
+@media screen and (max-width: 1188px) {
+    span.title{
+        font-size: 52pt;
+    }
+    
+}
+@media screen and (max-width: 969px) {
+    span.title{
+        font-size: 42pt;
+    }
+    span.desc{
+        font-size: 16pt;
+    }
+@media screen and (max-width: 786px) {
+    span.title{
+        font-size: 32pt;
+    }
+
+    span.desc{
+        font-size: 12pt;
+    }
+
+    .mylogo{
+        margin-left: -0.7%;
+        font-size: 16pt;
+        padding-top: 2vh;
+    }
+
+    object{
+        margin-left: 2vw;
+        padding-top: 2vh;
+        width: 2em;
+    }
+
+    .bi-github{
+        display: none;
+    }
+    
+    .bi-telegram{
+        display: none;
+    }
+
+    .button{
+        padding-top: 2.7vh;
+    }
+
+    input{
+        width: 30vw;
+    }
+}
+}
